@@ -53,10 +53,6 @@
 			isa = PBXBuildFile;
 			fileRef = 891FFADFBF5B364B98E85BD5;
 		};
-		62DBADAAFF2B5EF2DD69F4D9 = {
-			isa = PBXBuildFile;
-			fileRef = FC3FFC6F64A76B1A9F5E9066;
-		};
 		88EFFCAFC820800C0F0B1E75 = {
 			isa = PBXBuildFile;
 			fileRef = 9BDF261A58551E67AD2F05BC;
@@ -190,13 +186,6 @@
 			path = System/Library/Frameworks/CoreMIDI.framework;
 			sourceTree = SDKROOT;
 		};
-		53AAA794609901739B5906A4 = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.c.h;
-			name = Invoike.h;
-			path = ../../Source/Invoike.h;
-			sourceTree = "SOURCE_ROOT";
-		};
 		5487678B7B693089E48F00E6 = {
 			isa = PBXFileReference;
 			lastKnownFileType = text.plist.xml;
@@ -323,28 +312,12 @@
 			path = System/Library/Frameworks/Cocoa.framework;
 			sourceTree = SDKROOT;
 		};
-		FC3FFC6F64A76B1A9F5E9066 = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.cpp.cpp;
-			name = Invoike.cpp;
-			path = ../../Source/Invoike.cpp;
-			sourceTree = "SOURCE_ROOT";
-		};
 		FFCC558BBE7C76223154C50A = {
 			isa = PBXFileReference;
 			lastKnownFileType = wrapper.framework;
 			name = WebKit.framework;
 			path = System/Library/Frameworks/WebKit.framework;
 			sourceTree = SDKROOT;
-		};
-		B7BB952B14F7F5EB154D979A = {
-			isa = PBXGroup;
-			children = (
-				FC3FFC6F64A76B1A9F5E9066,
-				53AAA794609901739B5906A4,
-			);
-			name = Invoke;
-			sourceTree = "<group>";
 		};
 		3B687DB5A08E262EB0393712 = {
 			isa = PBXGroup;
@@ -359,7 +332,6 @@
 		438866EFEE0EC84DB5A43CED = {
 			isa = PBXGroup;
 			children = (
-				B7BB952B14F7F5EB154D979A,
 				3B687DB5A08E262EB0393712,
 			);
 			name = ui;
@@ -644,7 +616,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62DBADAAFF2B5EF2DD69F4D9,
 				88EFFCAFC820800C0F0B1E75,
 				4C83A0B52F8EF22713EE7A0F,
 				D86BFBEB72EE142FB1D4CE00,

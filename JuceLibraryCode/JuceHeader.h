@@ -43,7 +43,3 @@ namespace ProjectInfo
     const int          versionNumber  = 0x10000;
 }
 #endif
-inline void msg(String s)
-{
-	AlertWindow::showMessageBox(AlertWindow::AlertIconType::InfoIcon, "msg", s, "ok");
-}

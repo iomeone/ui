@@ -7,12 +7,12 @@
 */
 
 #include "MainComponent.h"
-#include "Invoike.h"
+
 //==============================================================================
 MainComponent::MainComponent()
 {
     setSize (600, 400);
-	RegisterFun();
+
 }
 
 MainComponent::~MainComponent()

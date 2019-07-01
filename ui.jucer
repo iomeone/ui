@@ -2,10 +2,6 @@
 
 <JUCERPROJECT id="dcXF2D" name="ui" projectType="guiapp" jucerVersion="5.4.3">
   <MAINGROUP id="X4yrM0" name="ui">
-    <GROUP id="{DBDE39E4-2AA5-593B-F621-CBBE1F6EFDD4}" name="Invoke">
-      <FILE id="UJzjms" name="Invoike.cpp" compile="1" resource="0" file="Source/Invoike.cpp"/>
-      <FILE id="DpZG0o" name="Invoike.h" compile="0" resource="0" file="Source/Invoike.h"/>
-    </GROUP>
     <GROUP id="{CA01306F-AD86-1439-62D0-413F58BC50A4}" name="Source">
       <FILE id="olwnXB" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
       <FILE id="SWDS2q" name="MainComponent.cpp" compile="1" resource="0"
