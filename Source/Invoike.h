@@ -12,5 +12,5 @@
 
 
 #include <chaiscript/chaiscript.hpp>
-#include "../JuceLibraryCode/JuceHeader.h"
+void RegisterFun();
 
