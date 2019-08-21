@@ -53,6 +53,10 @@
 			isa = PBXBuildFile;
 			fileRef = 891FFADFBF5B364B98E85BD5;
 		};
+		5705B5C766854446531359C4 = {
+			isa = PBXBuildFile;
+			fileRef = 76C8F2C30E0CC92D77C34AD4;
+		};
 		88EFFCAFC820800C0F0B1E75 = {
 			isa = PBXBuildFile;
 			fileRef = 9BDF261A58551E67AD2F05BC;
@@ -108,6 +112,13 @@
 		F0BD66C1A3597F968018607A = {
 			isa = PBXBuildFile;
 			fileRef = 48AD37F92E1E486085F17CCF;
+		};
+		051A9EA0090118E0E02CBDFB = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = LogWindow.h;
+			path = ../../Source/LogWindow.h;
+			sourceTree = "SOURCE_ROOT";
 		};
 		193FD27D5F53CBD14025D5AC = {
 			isa = PBXFileReference;
@@ -206,6 +217,13 @@
 			name = Carbon.framework;
 			path = System/Library/Frameworks/Carbon.framework;
 			sourceTree = SDKROOT;
+		};
+		76C8F2C30E0CC92D77C34AD4 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = LogWindow.cpp;
+			path = ../../Source/LogWindow.cpp;
+			sourceTree = "SOURCE_ROOT";
 		};
 		7AEF3900B3C55893080D4337 = {
 			isa = PBXFileReference;
@@ -319,9 +337,19 @@
 			path = System/Library/Frameworks/WebKit.framework;
 			sourceTree = SDKROOT;
 		};
+		7EC66AEFB3681949C9ADA22B = {
+			isa = PBXGroup;
+			children = (
+				76C8F2C30E0CC92D77C34AD4,
+				051A9EA0090118E0E02CBDFB,
+			);
+			name = LogWin;
+			sourceTree = "<group>";
+		};
 		3B687DB5A08E262EB0393712 = {
 			isa = PBXGroup;
 			children = (
+				7EC66AEFB3681949C9ADA22B,
 				245EECFB2B558B2DE7E4A4E7,
 				9BDF261A58551E67AD2F05BC,
 				7DA5ABB99F1E3A581AD01B71,
@@ -616,6 +644,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5705B5C766854446531359C4,
 				88EFFCAFC820800C0F0B1E75,
 				4C83A0B52F8EF22713EE7A0F,
 				D86BFBEB72EE142FB1D4CE00,

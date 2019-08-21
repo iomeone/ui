@@ -57,7 +57,7 @@ public:
         This class implements the desktop window that contains an instance of
         our MainComponent class.
     */
-    class MainWindow    : public DocumentWindow
+    class MainWindow    : public DocumentWindow, public AsyncUpdater
     {
     public:
         MainWindow (String name)  : DocumentWindow (name,
@@ -78,6 +78,18 @@ public:
             setVisible (true);
         }
 
+		void handleAsyncUpdate() override
+		{
+			resetContentComponent();
+		}
+		void resetContentComponent()
+		{
+			setContentNonOwned(new MainComponent(), true);
+			//auto refreshComp = new MainComponent();
+			//getContentComponent()->addAndMakeVisible(refreshComp);
+			//refreshComp->setBounds(getContentComponent()->getBounds());
+
+		}
         void closeButtonPressed() override
         {
             // This is called when the user tries to close this window. Here, we'll just
@@ -97,10 +109,30 @@ public:
         JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainWindow)
     };
 
-private:
+//private:
     std::unique_ptr<MainWindow> mainWindow;
 };
+
 
 //==============================================================================
 // This macro generates the main() routine that launches the app.
 START_JUCE_APPLICATION (uiApplication)
+
+inline void msg(String s)
+{
+	//AlertWindow::showMessageBox(AlertWindow::AlertIconType::InfoIcon, "msg", s, "ok");
+}
+
+extern "C" void __blink_sync(const char *source_file)
+{
+	msg("__blink_sync");
+}
+extern "C" void __blink_release(const char *source_file, bool success)
+{
+	msg("__blink_release");
+	uiApplication* ua = dynamic_cast<uiApplication*>(JUCEApplication::getInstance());
+	if (ua)
+	{
+		ua->mainWindow->triggerAsyncUpdate();
+	}
+}

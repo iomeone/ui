@@ -2,6 +2,9 @@
 
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Filter Include="ui\Source\LogWin">
+      <UniqueIdentifier>{D6672CD8-BF5E-89F1-F54E-F904B1FCCFB4}</UniqueIdentifier>
+    </Filter>
     <Filter Include="ui\Source">
       <UniqueIdentifier>{A1B1CEF5-5DAB-17F5-5581-6AAA48DFD00E}</UniqueIdentifier>
     </Filter>
@@ -13,6 +16,9 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Source\LogWindow.cpp">
+      <Filter>ui\Source\LogWin</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\MainComponent.cpp">
       <Filter>ui\Source</Filter>
     </ClCompile>
@@ -57,6 +63,9 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Source\LogWindow.h">
+      <Filter>ui\Source\LogWin</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\MainComponent.h">
       <Filter>ui\Source</Filter>
     </ClInclude>

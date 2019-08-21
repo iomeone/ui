@@ -74,7 +74,7 @@
       <WarningLevel>Level4</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <AdditionalOptions>/I&quot;./../../source&quot; /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/I&quot;./../../source&quot; /bigobj /ZI %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp14</LanguageStandard>
     </ClCompile>
     <ResourceCompile>
@@ -94,6 +94,9 @@
       <OutputFile>$(IntDir)\ui.bsc</OutputFile>
     </Bscmake>
     <Lib/>
+    <PostBuildEvent>
+      <Command>&quot;$(ProjectDir)blink.exe&quot; &quot;$(TargetPath)&quot;</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Midl>
@@ -116,7 +119,7 @@
       <WarningLevel>Level4</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <AdditionalOptions>/I&quot;./../../source&quot; /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/I&quot;./../../source&quot; /bigobj /ZI %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp14</LanguageStandard>
     </ClCompile>
     <ResourceCompile>
@@ -138,8 +141,12 @@
       <OutputFile>$(IntDir)\ui.bsc</OutputFile>
     </Bscmake>
     <Lib/>
+    <PostBuildEvent>
+      <Command>&quot;$(TargetDir)blink.exe&quot; &quot;$(TargetPath)&quot;</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Source\LogWindow.cpp"/>
     <ClCompile Include="..\..\Source\MainComponent.cpp"/>
     <ClCompile Include="..\..\Source\Main.cpp"/>
     <ClCompile Include="..\..\JuceLibraryCode\include_juce_audio_basics.cpp"/>
@@ -156,6 +163,7 @@
     <ClCompile Include="..\..\JuceLibraryCode\include_juce_opengl.cpp"/>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Source\LogWindow.h"/>
     <ClInclude Include="..\..\Source\MainComponent.h"/>
     <ClInclude Include="..\..\JuceLibraryCode\AppConfig.h"/>
     <ClInclude Include="..\..\JuceLibraryCode\JuceHeader.h"/>
