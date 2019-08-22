@@ -1,6 +1,6 @@
 
 # how to rapid design juce ui.
-##step 1: build  https://github.com/crosire/blink to x64, copy blink exe to solution dir , like I did in https://github.com/iomeone/ui/tree/master/Builds/VisualStudio2017.
+## step 1: build  https://github.com/crosire/blink to x64, copy blink exe to solution dir , like I did in https://github.com/iomeone/ui/tree/master/Builds/VisualStudio2017.
 
 ## step 2: Post-build Command , add command as folows:
         "$(ProjectDir)blink.exe" "$(TargetPath)"
