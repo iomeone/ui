@@ -11,7 +11,7 @@
 #### 	Extra Compiler Flags, add command as follows:
          /bigobj /ZI 
          
-## Then you go!
+#### 	When you compile the project, Then you go!
 
 
 
