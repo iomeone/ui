@@ -11,7 +11,7 @@
 #### 	Extra Compiler Flags, add command as follows:
          /bigobj /ZI 
          
-#### 	When you compile the project, Then you go!  
+#### 	When you compile the project to the x64 debug (there's some issue with win32) , Then you go!  （my env is visual studio 2017, x64 )
    
 <br/>
 <br/>
