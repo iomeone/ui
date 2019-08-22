@@ -4,11 +4,11 @@
 #### 	build  https://github.com/crosire/blink to x64, copy blink exe to solution dir , like I did in https://github.com/iomeone/ui/tree/master/Builds/VisualStudio2017.
 
 ## step 2: 
-#### 	Post-build Command , add command as folows:
+#### 	In Projucer's Post-build Command , add command as folows:
         "$(ProjectDir)blink.exe" "$(TargetPath)"
         
 ## step 3: 
-#### 	Extra Compiler Flags, add command as follows:
+#### 	In Projucer's Extra Compiler Flags, add command as follows:
          /bigobj /ZI 
          
 #### 	When you compile the project to the x64 debug (there's some issue with win32) , Then you go!  （my env is visual studio 2017, x64 )
