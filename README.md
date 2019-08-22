@@ -11,13 +11,13 @@
 #### 	Extra Compiler Flags, add command as follows:
          /bigobj /ZI 
          
-#### 	When you compile the project, Then you go!
+#### 	When you compile the project, Then you go!  
    
    
    
    
    
-# Why is this work! 
+# Why is this work!  
 #### When you modiy some code in cpp file, blink recompile the cpp file to obj file, and hot replace the running process's code memory to the new compiled code.
 
 # Why the modified component can refresh itself. 
