@@ -43,7 +43,7 @@ extern "C" void __blink_release(const char *source_file, bool success)
 	}
 }
 ```
-## when compiling finished , the compiler call __blink_release, then I recreate the main component like follows
+#### when compiling finished , the compiler call __blink_release, then I recreate the main component like follows
 ```
 void handleAsyncUpdate() override
 {
