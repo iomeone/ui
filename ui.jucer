@@ -34,7 +34,7 @@
         <MODULEPATH id="juce_opengl" path="../JUCE/modules"/>
       </MODULEPATHS>
     </XCODE_MAC>
-    <VS2017 targetFolder="Builds/VisualStudio2017" extraCompilerFlags="/I&quot;./../../source&quot; /bigobj /ZI ">
+    <VS2017 targetFolder="Builds/VisualStudio2017" extraCompilerFlags=" /bigobj /ZI ">
       <CONFIGURATIONS>
         <CONFIGURATION isDebug="1" name="Debug" postbuildCommand="&quot;$(ProjectDir)blink.exe&quot; &quot;$(TargetPath)&quot;"/>
         <CONFIGURATION isDebug="0" name="Release" postbuildCommand="&quot;$(TargetDir)blink.exe&quot; &quot;$(TargetPath)&quot;"/>
